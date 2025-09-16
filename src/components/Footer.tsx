@@ -5,10 +5,10 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Github, href: "https://github.com/alexjohnson", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com/in/alexjohnson", label: "LinkedIn" },
-    { icon: Twitter, href: "https://twitter.com/alexjohnson", label: "Twitter" },
-    { icon: Mail, href: "mailto:alex.johnson@email.com", label: "Email" }
+    { icon: Github, href: "https://github.com/Aryan9131", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/aryan-nayak-558188335/", label: "LinkedIn" },
+    { icon: Twitter, href: "https://www.naukri.com/code360/profile/d8faa988-d0d5-4d1c-a2a7-20f1385db692", label: "Naukri" },
+    { icon: Mail, href: "mailto:aryannayak9131@gmail.com", label: "Email" }
   ];
 
   const scrollToTop = () => {
@@ -77,18 +77,18 @@ const Footer = () => {
             <div className="space-y-4">
               <h3 className="text-lg font-semibold text-foreground">Get In Touch</h3>
               <div className="space-y-2 text-muted-foreground">
-                <p>San Francisco, CA</p>
+                <p>Panna, MP</p>
                 <a 
-                  href="mailto:alex.johnson@email.com"
+                  href="mailto:aryannayak9131@gmail.com"
                   className="block hover:text-primary transition-colors"
                 >
-                  alex.johnson@email.com
+                  aryannayak9131@gmail.com
                 </a>
                 <a 
-                  href="tel:+15551234567"
+                  href="+919131694047"
                   className="block hover:text-primary transition-colors"
                 >
-                  +1 (555) 123-4567
+                  +91 9131694047
                 </a>
               </div>
               
