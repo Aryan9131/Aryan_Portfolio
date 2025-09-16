@@ -37,16 +37,6 @@ const Navigation = () => {
     document.documentElement.classList.toggle('light');
   };
 
-  const downloadResume = () => {
-    // Simulate resume download
-    const link = document.createElement('a');
-    link.href = '/resume-alex-johnson.pdf'; // This would be a real PDF in production
-    link.download = 'Aryan_Nayak_Resume.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
   return (
     <>
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
@@ -88,10 +78,9 @@ const Navigation = () => {
                 {theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
               </Button>
 
-              <a href="https://drive.google.com/uc?export=download&id=1WbOWo36_btM_98IkPDChXiPL9DmG4ffP" target="_blank" rel="noopener noreferrer" download="Aryan_Nayak_Resume.pdf">
+              <a href="https://drive.google.com/file/d/1dYdp-t_ZWyU7-1SahySfLQOSXTz_UT6g/view?usp=sharing" target="_blank" rel="noopener noreferrer" download="Aryan_Nayak_Resume.pdf">
                 <Button
                   variant="outline"
-                  // onClick={downloadResume}
                   className="border-primary/30 text-primary hover:bg-primary/10 hover:border-primary transition-all duration-300"
                 >
                   <Download className="h-4 w-4 mr-2" />
