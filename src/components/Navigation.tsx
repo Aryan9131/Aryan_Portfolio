@@ -147,14 +147,16 @@ const Navigation = () => {
                 </Button>
               </div>
 
-              <Button
+              
+              <a href="https://drive.google.com/file/d/1dYdp-t_ZWyU7-1SahySfLQOSXTz_UT6g/view?usp=sharing" target="_blank" rel="noopener noreferrer" download="Aryan_Nayak_Resume.pdf">
+               <Button
                 variant="outline"
-                onClick={downloadResume}
                 className="w-full border-primary/30 text-primary hover:bg-primary/10 hover:border-primary transition-all duration-300"
               >
                 <Download className="h-4 w-4 mr-2" />
                 Download Resume
               </Button>
+              </a>
 
               <Button
                 onClick={() => scrollToSection('#contact')}
