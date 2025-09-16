@@ -78,7 +78,7 @@ const Navigation = () => {
                 {theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
               </Button>
 
-              <a href="https://drive.google.com/file/d/1dYdp-t_ZWyU7-1SahySfLQOSXTz_UT6g/view?usp=sharing" target="_blank" rel="noopener noreferrer" download="Aryan_Nayak_Resume.pdf">
+              <a href="https://drive.google.com/file/d/1Q6l2__XYHSniIsU7xoKSYOwRivtSzdil/view" target="_blank" rel="noopener noreferrer" download="Aryan_Nayak_Resume.pdf">
                 <Button
                   variant="outline"
                   className="border-primary/30 text-primary hover:bg-primary/10 hover:border-primary transition-all duration-300"
@@ -148,7 +148,7 @@ const Navigation = () => {
               </div>
 
               
-              <a href="https://drive.google.com/file/d/1dYdp-t_ZWyU7-1SahySfLQOSXTz_UT6g/view?usp=sharing" target="_blank" rel="noopener noreferrer" download="Aryan_Nayak_Resume.pdf">
+              <a href="https://drive.google.com/file/d/1Q6l2__XYHSniIsU7xoKSYOwRivtSzdil/view" target="_blank" rel="noopener noreferrer" download="Aryan_Nayak_Resume.pdf">
                <Button
                 variant="outline"
                 className="w-full border-primary/30 text-primary hover:bg-primary/10 hover:border-primary transition-all duration-300"
