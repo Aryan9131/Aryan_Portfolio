@@ -120,6 +120,39 @@ const Projects = () => {
       liveUrl: "https://ux-genie.idea360.tech/"
     }
   ];
+
+  const powerPlatformProjects = [
+    {
+      id: 1,
+      title: "SharePoint AI Document Assistant",
+      description:
+        "AI-powered document processing workflow that extracts summaries and key insights from uploaded files in SharePoint, then auto-updates metadata using Power Automate and Azure AI. Includes a Copilot Studio agent for conversational query support.",
+      technologies: ["Power Automate", "SharePoint", "Azure AI", "Copilot Studio"],
+    },
+    {
+      id: 2,
+      title: "ATS IntelliRoute (Automated Request Routing Agent)",
+      description:
+        "Autonomous Copilot Studio agent triggered when a Microsoft Form is submitted. It extracts form details, matches the request with the most suitable employee using an internal dataset, logs a new entry in SharePoint, and sends email notifications to the assigned employee.",
+      technologies: ["Copilot Studio", "Microsoft Forms", "Power Automate", "SharePoint", "Excel / Dataverse"],
+    },
+    {
+      id: 3,
+      title: "FinanceBuddy (Multilingual Personal Finance Assistant)",
+      description:
+        "Conversational multilingual agent built in Copilot Studio that interacts with Dataverse records to answer user-specific finance queries, provide transaction breakdowns, and generate monthly spending summaries.",
+      technologies: ["Copilot Studio", "Power Apps", "Dataverse", "Power Automate"],
+    },
+    {
+      id: 4,
+      title: "Document Query Agent (RAG-based Document Intelligence)",
+      description:
+        "Agent that allows users to upload documents and then ask contextual questions on the content. Uses Azure AI/AI Builder to extract content and retrieval logic to answer document-based questions accurately.",
+      technologies: ["Copilot Studio", "Power Automate", "Azure AI / AI Builder"],
+    },
+  ];
+
+
   const categories = [
     { id: "all", label: "All Projects" },
     { id: "fullstack", label: "Full Stack" },
@@ -288,20 +321,70 @@ const Projects = () => {
           </div>
         </div>
 
+        {/* Power Platform Projects */}
+        <h3 className="text-2xl font-semibold mb-4 mt-12">Power Platform Projects</h3>
+        <div className="relative group">
+          <div className="flex overflow-x-auto gap-6 pb-6 snap-x snap-mandatory scrollbar-hide">
+            {powerPlatformProjects.map((project) => (
+              <Card
+                key={project.id}
+                className="min-w-[340px] max-w-sm snap-center group bg-card border-border hover:border-border-hover hover:shadow-lg transition-all duration-300 overflow-hidden"
+              >
+                <CardHeader>
+                  <CardTitle className="text-xl group-hover:text-primary transition-colors">
+                    {project.title}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    {project.description}
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {project.technologies.map((tech) => (
+                      <Badge
+                        key={tech}
+                        variant="secondary"
+                        className="text-xs bg-muted hover:bg-muted-foreground/10 transition-colors"
+                      >
+                        {tech}
+                      </Badge>
+                    ))}
+                  </div>
+
+                  {/* Case Study Button */}
+                  {/* <Button
+                    size="sm"
+                    variant="outline"
+                    className="w-full border-primary/30 text-primary hover:bg-primary/10 hover:border-primary"
+                    onClick={() => alert("This will open case study or documentation soon.")}
+                  >
+                    View Case Study
+                  </Button> */}
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+
         {/* Additional Projects */}
         <div className="mt-12 text-center">
           <h3 className="text-2xl font-semibold mb-3">Additional Projects</h3>
           <p className="text-muted-foreground max-w-3xl mx-auto text-sm leading-relaxed">
-            Contributed to <strong>10+ additional full-stack and AI-focused projects</strong> during my internship,
-            including automation workflows, research scrapers, and enterprise-grade dashboards.
+            Worked on multiple <strong>Full Stack, AI, and Power Platform solutions</strong> including
+            Copilot Studio agents, Power Automate workflows, and SharePoint integrations.
+            Contributed to <strong>10+ additional projects</strong> involving workflow automation and scalable backend development during intenship.
           </p>
           <div className="flex justify-center gap-3 mt-4 flex-wrap">
-            <Badge variant="secondary">MERN Stack</Badge>
+            <Badge variant="secondary">Power Apps</Badge>
+            <Badge variant="secondary">Copilot Studio</Badge>
+            <Badge variant="secondary">Power Automate</Badge>
+            <Badge variant="secondary">Dataverse</Badge>
             <Badge variant="secondary">Next.js</Badge>
-            <Badge variant="secondary">LLMs</Badge>
-            <Badge variant="secondary">Automation</Badge>
+            <Badge variant="secondary">Generative AI</Badge>
           </div>
         </div>
+
       </div>
     </section>
   );

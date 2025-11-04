@@ -43,7 +43,7 @@ const Contact = () => {
     {
       icon: MapPin,
       label: "Location",
-      value: "Pana, MP",
+      value: "Panna, MP",
       href: null
     }
   ];
@@ -190,7 +190,8 @@ const Contact = () => {
                   <Button
                     type="submit"
                     size="lg"
-                    disabled={isSubmitting}
+                    // disabled={isSubmitting}
+                    disabled={true}
                     className="w-full bg-gradient-primary hover:shadow-glow transition-all duration-300 text-primary-foreground font-semibold"
                   >
                     {isSubmitting ? (
